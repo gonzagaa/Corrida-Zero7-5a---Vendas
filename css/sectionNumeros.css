@@ -1,0 +1,159 @@
+#numeros {
+    position: relative;
+}
+
+#numeros header h2 {
+    margin-bottom: 1rem;
+}
+
+/* #numeros img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#numeros .wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+#numeros::before,
+#numeros::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, #023c83, #0080c9, #023c83, transparent);
+    z-index: 2;
+}
+
+#numeros::after {
+    top: initial;
+    bottom: 0;
+} */
+
+#numeros .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#numeros .cards .borderCard {
+    width: 100%;
+    padding: .2rem;
+    border-radius: 1.2rem;
+}
+
+#numeros .cards .card {
+    position: relative;
+    width: 100%;
+    padding: 4rem;
+    padding-top: 5rem;
+    border-radius: 1rem;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(130deg, #1C1C1C, #080808);
+}
+
+#numeros .cards .borderCard {
+    background: linear-gradient(180deg,#1da4f3, #1da4f3, #1da4f3, #00000000 60%);
+    background: linear-gradient(180deg, #5a5a5a, #161616 30%);
+}
+
+#numeros .cards .card h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    line-height: .8;
+    color: #d2d2d2;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: -25%;
+    background: var(--gradient);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 80%;
+}
+
+#numeros .cards .card h3 span {
+}
+
+#numeros .cards .card p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#numeros p.obs {
+    color: #e2ebff;
+    font-size: 1.3rem;
+    margin-top: 4rem;
+}
+
+#numeros a button {
+    margin-top: 2rem;
+}
+
+#numeros p.data {
+    font-size: 1.6rem;
+    width: 80%;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+@media (min-width: 1080px) {
+    section#numeros .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#numeros header {
+        margin-bottom: 6rem;
+    }
+
+    section#numeros .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    section#numeros .cards .card {
+        padding: 5rem;
+        padding-top: 6rem;
+    }
+
+    section#numeros .cards .card h3 {
+        font-size: 2rem;
+        padding: 2rem 2rem;
+        width: 90%;
+    }
+
+    section#numeros .cards .card p {
+        font-size: 1.6rem;
+    }
+
+    section#numeros p.obs {
+        width: 80%;
+    }
+    
+}
+
+@media (min-width: 1700px) {
+
+}

@@ -1,0 +1,305 @@
+.planos {
+    overflow: hidden;
+    position: relative;
+}
+
+.planos.white header h2 {
+    color: #070C11;
+}
+
+.planos.white header p {
+    color: #070C11;
+}
+
+.planos.white header p span {
+    color: #070C11;
+}
+
+.planos img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.planos .wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.planos::before,
+.planos::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, #023c83, #0080c9, #023c83, transparent);
+    z-index: 2;
+}
+
+.planos::after {
+    top: initial;
+    bottom: 0;
+}
+
+.planos .cards {
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.planos .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border-radius: 2rem;
+
+    background: linear-gradient(to bottom, #02060f, #0a121a);
+
+    padding: 2rem;
+    padding-top: 3rem;
+    border: 2px solid #ffffff13;
+}
+
+.planos .card:nth-child(2) {
+    border: 1px solid #1da4f3;
+    background: linear-gradient(to bottom, #030a1b, #0f1a26);
+}
+
+.planos p.obs {
+    font-size: 1.4rem;
+    color: #ffffff80;
+
+    position: relative;
+    z-index: 1;
+
+    margin-top: 2rem;
+}
+
+.planos .card .title {
+    position: absolute;
+    background: linear-gradient(to bottom, #01040A, #070C11);
+    border: 1px solid #ffffff21;
+    padding: 2rem 2rem;
+
+    top: -7%;
+    width: 90%;
+    border-radius: 2rem;
+}
+
+.planos .cards .card:nth-child(2) .title {
+    background: linear-gradient(to right,#1da4f3, #023c83);
+    border: none;
+}
+
+.planos .card .title h3 {
+    color: #fff;
+    font-family: var(--ncs);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.planos .card h4 {
+    color: #fff;
+    font-family: var(--ncs);
+    margin-top: 3.5rem;
+    font-size: 1.6rem;
+}
+
+.planos .card h4 span {
+    font-family: var(--ncs);
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.planos .card .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+    margin-top: 2.5rem;
+
+    width: 100%;
+}
+
+.planos .cards .card:nth-child(1) .topics {
+    margin-bottom: 2rem;
+}
+
+.planos .card .topics p {
+    color: #dae1e6;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.planos .card .topics p span {
+    color: #e7e7e7;
+    font-weight: 500;
+}
+
+.planos .card .topics p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: -1rem;
+    left: 0;
+
+    background: linear-gradient(to right, #004f7c 60%, transparent);
+}
+
+.planos .card .topics p:nth-child(1)::before {
+    display: none;
+}
+
+.planos .card .topics ion-icon {
+    color: var(--primary-color);
+}
+
+.planos .card p.obs {
+    font-size: 1.6rem;
+}
+
+.planos .price {
+    margin-top: 3rem;
+}
+
+.planos .price h4 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: var(--ncs);
+    line-height: 1;
+}
+
+.planos .price h4 span {
+    font-family: var(--ncs);
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+}
+
+.planos .price h5 {
+    font-family: var(--ncs);
+    color: #fff;
+    font-size: 3rem;
+}
+
+.planos .price h5 span {
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2rem;
+}
+
+.planos .card a {
+    width: 100%;
+}
+
+.planos a button {
+    margin-top: 2rem;
+}
+
+@media (min-width: 1080px) {
+    section.planos {
+        padding-inline: 9%;
+    }
+
+    section.planos .wrapper.plano {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.planos .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 4rem;
+    }
+
+    section.planos .cards .card p.obs {
+        margin: 0;
+        padding-inline: 0;
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    section.planos .card a,
+    section.planos .card a button {
+        width: 100%;
+    }
+
+    section.planos .card .title {
+        width: 60%;
+        top: -6%;
+    }
+
+    section.planos .card h4 {
+        font-size: 2.2rem;
+        width: 80%;
+    }
+
+    section.planos .card .topics {
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    section.planos .card .topics p {
+        font-size: 1.6rem;
+    }
+
+    section.planos .price {
+        margin-top: 4rem;
+    }
+
+    section.planos .price h4 {
+        font-size: 6rem;
+    }
+    
+    section.planos .price h4 span {
+        font-size: 4rem;
+    }
+    
+    section.planos .price h5 {
+        font-size: 4rem;
+    }
+    
+    section.planos .price h5 span {
+        font-size: 3rem;
+    }
+
+    section.planos .card a button {
+        filter: drop-shadow(0 0 20px #1da5f349);
+    }
+
+    section.planos .card a button:hover {
+        filter: drop-shadow(0 0 40px #1da5f376);
+    }
+
+    section.planos p.obs {
+        font-size: 1.6rem;
+        padding-inline: 25%;
+    }
+}

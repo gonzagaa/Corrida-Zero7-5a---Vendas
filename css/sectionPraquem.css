@@ -1,0 +1,90 @@
+#praquem {
+    overflow: hidden;
+    position: relative;
+
+}
+
+#praquem .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#praquem .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#praquem .borderCard {
+    width: 100%;
+    background: linear-gradient(130deg, #5a5a5a, #161616 30%);
+    background: linear-gradient(145deg, #023c83, #1da4f3, #000 30%);
+    padding: .2rem;
+    border-radius: 1.2rem;
+}
+
+#praquem .card {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    padding-block: 3rem;
+    border-radius: 1rem;
+
+    background: linear-gradient(130deg, #1C1C1C, #080808);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#praquem .card h3 {
+    background: linear-gradient(145deg, #023c83, #1da4f3, #023c83, #1da4f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+}
+
+#praquem .card p {
+    font-size: 1.4rem;
+    color: #bcbcbc;
+    text-align: left;
+}
+
+#praquem .card p span {
+    color: #fff;
+    font-weight: 600;
+}
+
+#praquem a {
+    width: 100%;
+}
+
+#praquem a button {
+    margin-top: 3rem;
+}
+
+@media (min-width: 1080px)  {
+    section#praquem .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    section#praquem a {
+        width: initial;
+    }
+
+    section#praquem .card p {
+        font-size: 1.4rem;
+    }
+
+    section#praquem .card {
+        padding: 3rem;
+        padding-block: 4rem;
+        height: 100%;
+    }
+}
