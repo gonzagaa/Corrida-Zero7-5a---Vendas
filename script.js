@@ -152,29 +152,18 @@ window.addEventListener("click", (e) => {
   }
 });
 
-const capaVsl = document.getElementById("vsl");
-const modalVsl = document.getElementById("modalVsl");
-const videoContainerVsl = document.getElementById("video-container-vsl");
-const closeBtnVsl = document.querySelector(".close-vsl");
+const vslDiv = document.getElementById("vsl");
 
-capaVsl.addEventListener("click", () => {
-  modalVsl.style.display = "flex";
-  videoContainerVsl.innerHTML = `
-    <iframe src="https://www.youtube.com/embed/acnq8_PvW_k?autoplay=1&si=GACYvwVrbYLsIfzE"
+vslDiv.addEventListener("click", () => {
+  vslDiv.innerHTML = `
+    <iframe width="100%" height="100%" 
+      src="https://www.youtube.com/embed/acnq8_PvW_k?autoplay=1&si=GACYvwVrbYLsIfzE"
       title="YouTube video player"
+      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+      allowfullscreen>
+    </iframe>
   `;
 });
 
-closeBtnVsl.addEventListener("click", () => {
-  modalVsl.style.display = "none";
-  videoContainerVsl.innerHTML = "";
-});
 
-window.addEventListener("click", (e) => {
-  if (e.target === modalVsl) {
-    modalVsl.style.display = "none";
-    videoContainerVsl.innerHTML = "";
-  }
-});
