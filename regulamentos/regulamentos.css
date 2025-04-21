@@ -1,0 +1,130 @@
+#regulamentos .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+#regulamentos header {
+    margin-bottom: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+#regulamentos header .buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: .4rem;
+
+    margin-top: 2rem;
+}
+
+#regulamentos header .buttons a {
+    width: 100%;
+    text-decoration: none;
+}
+
+#regulamentos header .buttons a button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1.5rem .7rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#regulamentos header .buttons a button:hover {
+    cursor: pointer;
+    filter: brightness(1.3);
+}
+
+#regulamentos header .buttons a:nth-child(1) button {
+    background: var(--gradient);
+    color: #fff;
+}
+
+#regulamentos header .buttons a:nth-child(2) button {
+    background: #fff;
+    color: #000;
+}
+
+  
+#regulamentos h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+  
+#regulamentos h4 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: #f6f6f6;
+}
+  
+#regulamentos p {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #Fff;
+}
+  
+#regulamentos ul {
+    margin: 10px 0 20px 20px;
+    padding-left: 15px;
+    color: #fff;
+    list-style: circle;
+}
+  
+#regulamentos li {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+  
+#regulamentos a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+  
+#regulamentos  a:hover {
+    text-decoration: underline;
+}
+
+#regulamentos .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#regulamentos .cards .card {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #ffffff0c;
+}
+
+@media (min-width: 1080px) {
+    section#regulamentos .cards {
+        display: grid;
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#regulamentos .cards .card {
+        height: 100%;
+    }
+
+    section#regulamentos .buttons {
+        width: 30%;
+    }
+}
