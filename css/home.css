@@ -28,6 +28,14 @@
     gap: 5rem;
   }
 
+  .close-vsl {
+    color: #fff;
+    position: absolute;
+    font-size: 30px;
+    right: 2rem;
+    top: 1rem;
+  }
+
   #home .video {
     background: var(--primary-color);
     width: 100%;
