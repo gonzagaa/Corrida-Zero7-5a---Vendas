@@ -411,7 +411,7 @@
             event_name: eventName,
             client_ip: "127.0.0.1", // opcional
             client_user_agent: navigator.userAgent,
-            email: null,  // deixe null ou remova se não tiver
+            email: null,
             phone: null,
             fbc: facebookData.fbc,
             fbp: facebookData.fbp
@@ -424,22 +424,10 @@
     
       // Envia evento ao carregar a página
       window.onload = function () {
-        // Facebook Pixel tradicional
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '553722946901869');
-        fbq('track', 'PageView');
-    
-        // API de Conversões
         sendFacebookEvent("PageView");
       };
     </script>
+    
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=553722946901869&ev=PageView&noscript=1"
     /></noscript>
