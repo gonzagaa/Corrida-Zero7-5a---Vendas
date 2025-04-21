@@ -151,3 +151,30 @@ window.addEventListener("click", (e) => {
     videoContainerGeral.innerHTML = "";
   }
 });
+
+const capaVsl = document.getElementById("vsl");
+const modalVsl = document.getElementById("modalVsl");
+const videoContainerVsl = document.getElementById("video-container-vsl");
+const closeBtnVsl = document.querySelector(".close-vsl");
+
+capaVsl.addEventListener("click", () => {
+  modalVsl.style.display = "flex";
+  videoContainerVsl.innerHTML = `
+    <iframe src="https://www.youtube.com/embed/acnq8_PvW_k?autoplay=1&si=GACYvwVrbYLsIfzE"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  `;
+});
+
+closeBtnVsl.addEventListener("click", () => {
+  modalVsl.style.display = "none";
+  videoContainerVsl.innerHTML = "";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modalVsl) {
+    modalVsl.style.display = "none";
+    videoContainerVsl.innerHTML = "";
+  }
+});
