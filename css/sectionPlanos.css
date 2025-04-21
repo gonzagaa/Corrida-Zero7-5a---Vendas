@@ -184,6 +184,14 @@
     margin-top: 3rem;
 }
 
+.planos .price h6 {
+    font-size: 2rem;
+    text-decoration: line-through;
+    color: rgb(255, 163, 163);
+    font-family: var(--ncs);
+    margin-bottom: 1rem;
+}
+
 .planos .price h4 {
     font-size: 4rem;
     color: #fff;
